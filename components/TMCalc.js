@@ -1,5 +1,5 @@
 import { calcTM } from "../lib/helpers";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 export default function TMCalc({ oneRM, setOneRM, TM, setTM }) {
   function handleChange(event) {
@@ -12,10 +12,10 @@ export default function TMCalc({ oneRM, setOneRM, TM, setTM }) {
       ...prevState,
       [name]: calcTM(value * 0.9, 2.5),
     }));
-    console.log({ oneRM, TM });
-    localStorage.setItem("oneRM", JSON.stringify(oneRM));
-    localStorage.setItem("TM", JSON.stringify(TM));
-    console.log("boop");
+    // console.log({ oneRM, TM });
+    // localStorage.setItem("oneRM", JSON.stringify(oneRM));
+    // localStorage.setItem("TM", JSON.stringify(TM));
+    // console.log("boop");
   }
 
   return (

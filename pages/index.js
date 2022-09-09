@@ -20,33 +20,33 @@ export default function Home() {
   });
   const [week, setWeek] = useState(1);
 
-  useEffect(() => {
-    const value = localStorage.getItem("TM");
-    const data = !!value
-      ? JSON.parse(value)
-      : {
-          squat: 0,
-          bench: 0,
-          deadlift: 0,
-          overhead: 0,
-        };
-    console.log(data);
-    setTM(data);
-  }, []);
+  // useEffect(() => {
+  //   const value = localStorage.getItem("TM");
+  //   const data = !!value
+  //     ? JSON.parse(value)
+  //     : {
+  //         squat: 0,
+  //         bench: 0,
+  //         deadlift: 0,
+  //         overhead: 0,
+  //       };
+  //   console.log(data);
+  //   setTM(data);
+  // }, []);
 
-  useEffect(() => {
-    const value = localStorage.getItem("oneRM");
-    const data = !!value
-      ? JSON.parse(value)
-      : {
-          squat: 0,
-          bench: 0,
-          deadlift: 0,
-          overhead: 0,
-        };
-    console.log(data);
-    setOneRM(data);
-  }, []);
+  // useEffect(() => {
+  //   const value = localStorage.getItem("oneRM");
+  //   const data = !!value
+  //     ? JSON.parse(value)
+  //     : {
+  //         squat: 0,
+  //         bench: 0,
+  //         deadlift: 0,
+  //         overhead: 0,
+  //       };
+  //   console.log(data);
+  //   setOneRM(data);
+  // }, []);
 
   // let RMhistory;
   // let TMhistory;
